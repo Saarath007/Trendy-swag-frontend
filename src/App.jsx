@@ -24,10 +24,10 @@ function App() {
   return (
     <>
 
-   <Login/>
+   {/* <Login/> */}
 
     
-   {/* <BrowserRouter>
+   <BrowserRouter>
    <Navbar/>
    <Routes>
       <Route path = "/" element={<Home/>}/>
@@ -42,7 +42,7 @@ function App() {
       <Route path='/edit/:id' element = {<Edit/>} loader={({params})=> fetch(`http://localhost:5070/allproducts/${params.id}`)} />
    </Routes>
    <Footer/>
-   </BrowserRouter> */}
+   </BrowserRouter>
 
 
 
