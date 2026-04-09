@@ -23,7 +23,7 @@ const Shirts = () => {
 
    const [shirts, setShirts] = useState([])
    useEffect(()=>{
-    fetch(`http://localhost:5070/shirts`)
+    fetch(`https://trendy-swag-backend.onrender.com/shirts`)
     .then((res)=> res.json())
     .then((data)=>{
       if(Array.isArray(data)){
@@ -31,7 +31,7 @@ const Shirts = () => {
       }
     })
     .catch((Error) => console.log(Error));
-   })
+   },[])
 
 
 
