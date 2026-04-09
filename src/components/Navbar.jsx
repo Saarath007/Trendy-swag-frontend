@@ -1,0 +1,152 @@
+import React, { useState } from 'react'
+import './Navbar.css'
+import { Link } from 'react-router-dom'
+import { FiShoppingCart } from "react-icons/fi";
+
+const Navbar = () => {
+
+ const [cartCount, setCartCount] = useState(0);
+   const countIcon = () =>{
+    setCartCount(cartCount +1);
+   }
+  
+  return (
+    <>
+      <nav className="navbar navbar-expand-lg navbar-dark" id="navbar1">
+        <div className="container-fluid">
+          <Link className="navbar-brand brandname" to="/">
+            TRENDY <span className="brandname2">SWAG</span>
+          </Link>
+          
+          <button
+            className="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span className="navbar-toggler-icon"></span>
+          </button>
+
+
+          {/* actions that should always be visible */}
+          <div className="d-flex align-items-center ms-auto d-lg-none">
+            <button
+              type="button"
+              className="btn bg-warning-subtle text-dark p-2 signbtn me-3"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal"
+            >
+              Sign In
+            </button>
+            
+          </div>
+
+          <div className="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul className="navbar-nav mx-auto linkitems mb-2 mb-lg-0">
+              <li className="nav-item text-decoration-none">
+                <Link to="/" className="nav-link">Home</Link>
+              </li>
+              <li className="nav-item">
+                <Link to="/about" className="nav-link">About</Link>
+              </li>
+              <li className="nav-item">
+                <Link to="/contact" className="nav-link">Contact</Link>
+              </li>
+              <li className="nav-item dropdown">
+                <Link
+                  to="/products"
+                  className="nav-link dropdown-toggle"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Products
+                </Link>
+                <ul className="dropdown-menu bg-dark" aria-labelledby="navbarDropdown">
+                  <li><Link to="/shirts" className="dropdown-item">Shirts</Link></li>
+                  <li><Link to="/tshirts" className="dropdown-item">T-shirts</Link></li>
+                  <li><Link to="/jeans" className="dropdown-item">Jeans</Link></li>
+                  <li><Link to="/formals" className="dropdown-item">Formal Pants</Link></li>
+                </ul>
+              </li>
+              <li className="nav-item dropdown">
+                <Link
+                  to="/admin"
+                  className="nav-link dropdown-toggle"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Admin
+                </Link>
+                <ul className="dropdown-menu bg-dark" aria-labelledby="navbarDropdown">
+                  <li><Link to="/upload" className="dropdown-item">Upload</Link></li>
+                  <li><Link to="/update" className="dropdown-item">Update</Link></li>
+                </ul>
+              </li>
+            
+            </ul> 
+
+            <form className="d-flex me-3" role="search">
+              <input type="search" className="form-control" placeholder="Search..." required />
+              <button className="btn signin bg-warning-subtle text-dark" type="submit">Search</button>
+            </form>
+
+      
+            <div className="d-flex align-items-center ms-auto d-none d-lg-flex">
+              <button
+                type="button"
+                className="btn bg-warning-subtle text-dark p-2 my-lg-0 my-2 signbtn ms-3"
+                data-bs-toggle="modal"   
+                data-bs-target="#exampleModal"
+              >
+                Sign In
+              </button>
+              <h3 className="carticon ms-3"> <Link to = "/cart" className='cart-icon'><FiShoppingCart/> <span id='cart-count'>{cartCount.length}</span></Link> </h3>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <form action="">
+        <div
+          className="modal fade"
+          id="exampleModal"
+          tabIndex="-1"
+          aria-labelledby="exampleModalLabel"
+          aria-hidden="true"
+        >
+          <div className="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div className="modal-content">
+              <div className="modal-header">
+                <h1 className="modal-title fs-5 text-dark " id="exampleModalLabel">Login Page</h1>
+                <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div className="modal-body bg-warning-subtle">
+                <input type="text" className="form-control" placeholder="Enter Your Name" required />
+                <br />
+                <input type="email" className="form-control" placeholder="Email address" required />
+                <br />
+                <input type="password" className="form-control" placeholder="Password" required />
+                <br />
+                <input type="text" className="form-control" placeholder="Location" required />
+                <br />
+              </div>
+              <div className="modal-footer ">
+                <button type="button" className="btn btn-dark text-white" data-bs-dismiss="modal">Close</button>
+                <button type="submit" className="btn btn-dark text-white" aria-required="true">Submit</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </form>
+    </>
+  );
+};
+
+export default Navbar;

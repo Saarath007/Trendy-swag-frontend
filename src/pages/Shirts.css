@@ -1,0 +1,129 @@
+.headline h1{
+    /* margin: 30PX 50PX; */
+    letter-spacing: 2px;
+    font-size: 30px;
+    /* width: 50%; */
+    opacity: 0.8;
+    padding-top: 30px;
+    padding-left: 10px;
+    
+}
+@media screen and (max-width: 768px){
+.headline h1{
+    /* margin: 30PX 50PX; */
+    letter-spacing: 2px;
+    font-size: 20px;
+   
+    opacity: 0.8;
+    padding-top: 30px;
+    padding-left: 10px;
+    text-align: center;
+   
+
+    
+}
+
+}
+#products{
+    background-color:#fdf8e1 !important;
+    margin-top: 0px;
+}
+#products img{
+    width: 250px;
+    height: 280px;
+}
+
+@media screen and (max-width: 768px) {
+    #products img{
+    width: 200px;
+    height: 150px;
+    padding-top:15px ;
+    margin-top: 10px;
+}
+}
+#products h4{
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    /* font-family:'Asimovian',sans-serif; */
+    text-shadow: 0px 0px 0px rgb(249, 248, 164);
+    text-align: center;
+    color: black;
+}
+@media screen and (max-width: 768px){
+ #products h4{
+    font-size: 25px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    /* font-family:'Asimovian',sans-serif; */
+    text-shadow: 0px 0px 0px rgb(249, 248, 164);
+    text-align: center;
+    color: black;
+}
+
+}
+.card{
+    width: 250px;
+    height: 455px;
+    background: #fffae5 !important;
+    border: none !important;
+    box-shadow: 15px 20px 20px rgba(0,0,0,.4),
+                inset 2px 2px 10px black;
+                border-radius:20px !important;   
+    overflow: hidden;
+    justify-content: center; 
+    align-items: center; 
+    margin: 20px 80px ;
+    transition: all .2s ease !important ; 
+    
+}
+@media screen and (max-width: 768px){
+    .card{
+    width: 200px;
+    height: 300px;
+    background: #fffae5 !important;
+    border: none !important;
+    box-shadow: 15px 20px 20px rgba(0,0,0,.4),
+                inset 2px 2px 10px white;
+                border-radius:20px !important;   
+    overflow: hidden;
+    justify-content: center; 
+    align-items: center; 
+    margin: 20px 15px ;
+    transition: all .2s ease !important ; 
+    
+}
+}
+
+.card:hover{
+        box-shadow: inset 5px 5px 10px rgba(0,0,0,.3),
+                    inset -4px -4px 10px white;
+                    /* transition: .2s ease !important; */
+}
+.card-img-top img{
+    transition: 0.35s ease;
+}
+.card-img-top:hover{
+    transform: scale(1.15);
+}
+#products h5{
+    color: black;
+}
+#products p{
+    color: black;
+}
+@media screen and (max-width: 768px){
+    #products h5{
+           font-size: 15px;
+           font-weight: 600;
+           
+    }
+
+}
+@media screen and (max-width: 768px){
+    .cardbtn{
+        height: 30px;
+        padding-top: 0px;
+        
+    }
+}

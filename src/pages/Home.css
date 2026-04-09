@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Asimovian&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.catbag h1{
+     margin: 30PX 50PX;
+    letter-spacing: 2px;
+    font-size: 30px;
+    width: 50%;
+    opacity: 0.8;
+}
+@media screen and (max-width: 768px){
+    .catbag h1{
+        
+        font-size: 20px;
+        margin: 20px 100px;
+    }
+}
+   .bagbox{
+   display: flex;
+   
+    /* flex-direction: row;
+    flex-wrap: nowrap; */
+   } 
+  
+   @media screen and (max-width: 768px){
+    .bagbox{
+         display: flex;
+   flex-direction: row;
+   flex-wrap: nowrap;
+   gap: 30px;
+        overflow-x: scroll;
+    }
+    .bagbox::-webkit-scrollbar{
+    display: none;
+}
+}
+
+
+#home{
+
+    background-image:linear-gradient(rgba(0,0,0,.1),rgba(0,0,0,.2)), url(../assets/front\ img.jpg);
+    background-position: center;
+    background-size: cover;
+    flex-direction: row;
+    height: 700px;
+    padding-top: 250px;
+}
+/* .bat{
+    margin-right: 10px;
+} */
+
+#home h1{
+    font-size: 4rem;
+    font-weight: 800;
+    letter-spacing: 2px;
+    text-shadow: 0px 6px 0px lightyellow;
+    font-family: 'Asimovian',sans-serif; 
+    text-align: center;
+}
+#home p{
+     font-size: 30px;
+    font-weight:600;
+    text-shadow: 0px 4px 0px red;
+    animation: bounce 1s infinite;
+    text-align: center;
+}
+
+
+@media screen and (max-width: 768px) {
+#home{
+    background-image: linear-gradient(rgba(0,0,0,.3),rgba(0,0,0,.3)),url(../assets/front2.jpg);
+    background-size: cover;
+    background-position: center;
+    flex-direction: column;
+    padding-top: 30px;
+    size: 50%;   
+}
+#home h1{
+    font-size: 30px;
+    text-shadow: 0px 3px 0px lightyellow;
+}
+
+#home p{
+     font-size: 15px;
+    font-weight:600;
+    text-shadow: 0px 2px 0px red;
+    text-align: right;
+    padding-right: 10px;
+}
+}
+
+@keyframes bounce {
+      0% , 20% , 50% , 80% , 100% {
+        transform: translateY(0);
+  }
+
+  40% {
+    transform: translateY(-20px);
+  }
+  60% {
+    transform: translateX(-40px);
+  }
+}
+
+/* }
+#home h1{
+    font-size: 2rem;
+    padding-bottom: 300px;
+    justify-content: center;
+    letter-spacing: 2px;
+    text-shadow: 0px 6px 0px lightyellow;
+    text-align: center;
+
+}
+.font1{
+        font-family: 'Asimovian',sans-serif;
+        font-size: large;
+}
+#home p{
+    font-size: 30px;
+    font-weight:600;
+    text-shadow: 0px 4px 0px red;
+} */

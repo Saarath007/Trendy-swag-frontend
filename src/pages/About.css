@@ -1,0 +1,21 @@
+#about{
+   background-image:linear-gradient(rgba(175, 136, 6, 0.4),rgba(0,0,0,.8)),url(../assets/about.jpg);
+   background-position: center;
+   background-size: cover;
+   flex-direction: column;
+
+}
+#about h1{
+   position: relative;
+   font-size:80px;
+   letter-spacing: 1px;
+   font-weight:800;
+   padding-top:10px;
+   margin-top:5px;
+
+}
+#about p{
+   margin-top: 5%;
+   margin-bottom:20%;
+}
+

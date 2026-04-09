@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Asimovian&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#navbar1{
+    position: sticky;
+    top: 0;
+    left: 0;
+    height: 75px;
+    z-index: 100;
+    padding: .5rem 5rem;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.413);
+    background: black;
+    /* let flex handle alignment instead of text-align */
+}
+@media screen and (min-width: 375px) {
+    #navbar1 {
+        padding: .2rem 2rem;
+    }
+}
+
+@media screen and (max-width: 576px) {
+
+       #navbar1{
+        padding: 5px 5px;
+       }
+       .signbtn{
+        margin-left: 10px;
+        margin-top: 0;
+        margin-bottom: 0;
+        width: 50px;
+        height: 30px;
+    }
+}
+
+
+.navbar a{
+    font-family: Verdana, Geneva, Tahoma, sans-serif ;
+}
+
+.navbar .navbar-brand{
+    font-size: 30px;
+    font-weight: 600;
+    color:lightpink!important;
+}
+.linkitems a{
+    color: white;
+    border-bottom: 2px solid transparent;
+    background-color: black;
+    align-items: center;
+    padding: 0 10px;
+}
+.linkitems  a:hover{
+    border-bottom: 2px solid rgb(220, 235, 12);
+}
+
+
+.nav-item {
+    position: relative;
+}
+.linkitems li {
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif ;
+    position: relative;
+    font-size: 18px;
+    margin-left: 10px;
+    padding: 5px ;
+    color: white;
+    font-weight: 500;
+}
+.dropdown-menu{
+    /* rely on Bootstrap for show/hide behavior */
+    background-color: black;
+}
+.carticon{
+    background-color: black;
+    color: white;
+    margin-left: 20px;
+   
+}
+@media screen and (max-width:576px){
+    .carticon{
+          margin-right: 5px;
+          margin-left: 5px;
+    }
+
+}
+
+
+.brandname{
+    font-family: 'Asimovian', sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    color: white;
+}
+.brandname2{
+    font-family: 'Asimovian', sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    color: yellow;
+    margin-right: 20px;
+}
+/* Remove duplicate brandname adjustments; base rules already defined above */
+
+/*cart count */
+
+.cart-icon{
+    position: relative;
+    font-size: px;
+}
+#cart-count{
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    padding: 2px 6px;
+    font-size: 12px;
+}

@@ -1,0 +1,33 @@
+.prev-icon {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    font-size: 30px;
+    background-color: red;
+    cursor: pointer;
+    z-index: 1;
+}
+.next-icon {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    font-size: 30px;
+    background-color: red;
+    cursor: pointer;
+    z-index: 1;
+}
+
+
+@media screen and (min-width:770px) {
+    #carouselExampleInterval img{
+            height: 700px;
+}
+}
