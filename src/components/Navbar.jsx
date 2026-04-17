@@ -3,16 +3,14 @@ import './Navbar.css'
 import { Link } from 'react-router-dom'
 import { FiShoppingCart } from "react-icons/fi";
 
+
 const Navbar = () => {
 
- const [cartCount, setCartCount] = useState(0);
-   const countIcon = () =>{
-    setCartCount(cartCount +1);
-   }
+ 
   
   return (
     <>
-      <nav className="navbar navbar-expand-lg navbar-dark" id="navbar1">
+      {/* <nav className="navbar navbar-expand-lg navbar-dark" id="navbar1">
         <div className="container-fluid">
           <Link className="navbar-brand brandname" to="/">
             TRENDY <span className="brandname2">SWAG</span>
@@ -31,7 +29,7 @@ const Navbar = () => {
           </button>
 
 
-          {/* actions that should always be visible */}
+          
           <div className="d-flex align-items-center ms-auto d-lg-none">
             <button
               type="button"
@@ -107,11 +105,145 @@ const Navbar = () => {
               >
                 Sign In
               </button>
-              <h3 className="carticon ms-3"> <Link to = "/cart" className='cart-icon'><FiShoppingCart/> <span id='cart-count'>{cartCount.length}</span></Link> </h3>
+              <h3 className="carticon ms-3"> <Link to = "/cart" className='cart-icon'><FiShoppingCart/> <span id='cart-count'>{cartCount}</span></Link> </h3>
             </div>
           </div>
         </div>
+      </nav> */}
+ <nav className="navbar navbar-expand-lg navbar-dark" id="navbar1">
+        <div className="container-fluid">
+
+          {/* BRAND */}
+          <Link className="navbar-brand brandname" to="/">
+            TRENDY <span className="brandname2">SWAG</span>
+          </Link>
+
+          {/* MOBILE TOGGLE */}
+          <button
+            className="navbar-toggler"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#mobileMenu"
+          >
+            <span className="navbar-toggler-icon"></span>
+          </button>
+
+          {/* DESKTOP MENU */}
+          <div className="collapse navbar-collapse d-none d-lg-flex">
+
+            <ul className="navbar-nav mx-auto linkitems">
+
+              <li className="nav-item">
+                <Link to="/" className="nav-link">Home</Link>
+              </li>
+
+              <li className="nav-item">
+                <Link to="/about" className="nav-link">About</Link>
+              </li>
+
+              <li className="nav-item">
+                <Link to="/contact" className="nav-link">Contact</Link>
+              </li>
+
+              {/* ✅ FIXED PRODUCTS */}
+              <li className="nav-item dropdown">
+                <a role='button'
+                  
+                  className="nav-link dropdown-toggle"
+                  data-bs-toggle="dropdown"
+                >
+                  Products
+                </a>
+                <ul className="dropdown-menu dropdown-menu-dark">
+                  <li><Link to="/shirts" className="dropdown-item">Shirts</Link></li>
+                  <li><Link to="/tshirts" className="dropdown-item">T-shirts</Link></li>
+                  <li><Link to="/jeans" className="dropdown-item">Jeans</Link></li>
+                  <li><Link to="/formals" className="dropdown-item">Formal Pants</Link></li>
+                </ul>
+              </li>
+
+              {/* ✅ FIXED ADMIN */}
+              <li className="nav-item dropdown">
+                <a
+                  role='button'
+                  className="nav-link dropdown-toggle"
+                  data-bs-toggle="dropdown"
+                >
+                  Admin
+                </a>
+                <ul className="dropdown-menu dropdown-menu-dark">
+                  <li><Link to="/upload" className="dropdown-item">Upload</Link></li>
+                  <li><Link to="/update" className="dropdown-item">Update</Link></li>
+                </ul>
+              </li>
+
+            </ul>
+
+            {/* RIGHT SIDE */}
+            <form className="d-flex me-3">
+              <input className="form-control me-2" placeholder="Search..." />
+              <button className="btn btn-warning">Search</button>
+            </form>
+
+            <button className="btn btn-warning me-3">Sign In</button>
+
+            <Link to="/cart" className="cart-icon">
+              <FiShoppingCart />
+              {/* <span id="cart-count">{cartCount}</span> */}
+            </Link>
+          </div>
+        </div>
       </nav>
+
+      {/* ✅ MOBILE OFFCANVAS */}
+      <div className="offcanvas offcanvas-start" id="mobileMenu">
+        <div className="offcanvas-header">
+          <h5>Menu</h5>
+          <button className="btn-close" data-bs-dismiss="offcanvas"></button>
+        </div>
+
+        <div className="offcanvas-body">
+          <ul className="navbar-nav">
+
+            <li className="nav-item">
+              <Link to="/" className="nav-link">Home</Link>
+            </li>
+
+            <li className="nav-item">
+              <Link to="/about" className="nav-link">About</Link>
+            </li>
+
+            <li className="nav-item">
+              <Link to="/contact" className="nav-link">Contact</Link>
+            </li>
+
+            {/* PRODUCTS */}
+            <li className="nav-item dropdown">
+              <a className="nav-link dropdown-toggle" data-bs-toggle="dropdown">
+                Products
+              </a>
+              <ul className="dropdown-menu">
+                <li><Link to="/shirts" className="dropdown-item">Shirts</Link></li>
+                <li><Link to="/tshirts" className="dropdown-item">T-shirts</Link></li>
+                <li><Link to="/jeans" className="dropdown-item">Jeans</Link></li>
+                <li><Link to="/formals" className="dropdown-item">Formal Pants</Link></li>
+              </ul>
+            </li>
+
+            {/* ADMIN */}
+            <li className="nav-item dropdown">
+              <a className="nav-link dropdown-toggle" data-bs-toggle="dropdown">
+                Admin
+              </a>
+              <ul className="dropdown-menu">
+                <li><Link to="/upload" className="dropdown-item">Upload</Link></li>
+                <li><Link to="/update" className="dropdown-item">Update</Link></li>
+              </ul>
+            </li>
+
+          </ul>
+        </div>
+      </div>
 
       <form action="">
         <div

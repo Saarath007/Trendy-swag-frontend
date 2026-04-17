@@ -38,25 +38,25 @@ const Shirts = () => {
   return (
     <>
         <div id='products'>
-             {/* <div className="headline container">
+             <div className="headline container">
               <h1> <strong>Casual Shirts For Men</strong></h1>
              </div>
               <div className="container-fluid me-5">
                    <h4 className="text-center"><i>SHIRTS</i></h4>
-                     <div className="row  mb-5  row-cols-lg-4 row-cols-md-2 row-cols-sm-2  row-cols-2">
+                     <div className="row  mb-5  row-cols-lg-4 row-cols-md-3 row-cols-sm-2  row-cols-2">
                       {Shirtsdetail.map((shirt)=>(
 
                            <div className="col">
 				                    	<div className="card">
 						                    <img src={shirt.img} className="card-img-top"/>
 				                    		 <div className="card-body text-center mb-3">
-				             		        	<h5 className="card-title">{shirt.Sname}</h5>
-					                     		<h5>Rs:{shirt.Price}</h5>
-						                      <p className="text-decoration-line-through">Rs:{shirt.oldPrice}</p>
+				             		        	<h5 className="card-title">{shirt.sname}</h5>
+					                     		<h5>Rs:{shirt.price}</h5>
+						                      <p className="text-decoration-line-through">Rs:{shirt.oldprice}</p>
 						                      {
                                     cartProducts.find(shirts=> shirts.id === shirt.id)?(
                                     <button className ='cardbtn btn-warning' onClick={()=> {deleteCart(shirt)}}>remove</button>):(
-                                      <button className = 'cardbtn btn-warning' onClick={()=>{addCart(shirt); countIcon()}}>Add To Cart</button>
+                                      <button className = 'cardbtn btn btn-warning' onClick={()=>{addCart(shirt); countIcon()}}>Add To Cart</button>
                                     )
 
                                   }
@@ -65,8 +65,8 @@ const Shirts = () => {
 			                      </div>
                          ))}
                      </div>
-              </div> */}
-               <div className="container-fluid me-5">
+              </div>
+               {/* <div className="container-fluid me-5">
                    <h4 className="text-center"><i>SHIRTS</i></h4>
                      <div className="row  mb-5  row-cols-lg-4 row-cols-md-2 row-cols-sm-2  row-cols-2">
                       {shirts.map((shirt)=>(
@@ -90,7 +90,7 @@ const Shirts = () => {
 			                      </div>
                          ))}
                      </div>
-              </div>
+              </div> */}
         </div>
     </>
 

@@ -67,7 +67,7 @@ const Shirtsdetail = [
    },
    {
         id: 8,
-        sname:'Casual Plain Light Grey',
+        sname:'Casual Plain Light',
         price:799.00,
         oldprice:1199.00,
         img:imgs8,

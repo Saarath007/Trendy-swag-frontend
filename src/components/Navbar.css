@@ -7,7 +7,82 @@
     box-sizing: border-box;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+#navbar1 {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: black;
+  padding: 0.5rem 2rem;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.413);
+  height: 75px;
+}
 
+.brandname {
+  color: white !important;
+  font-weight: 700;
+  font-family: 'Asimovian', sans-serif !important;
+  font-size: 25px !important; 
+}
+
+.brandname2 {
+  color: #ffc107;
+  font-family: 'Asimovian', sans-serif !important;
+  font-size: 25px !important; 
+}
+
+.nav-link {
+  color: white !important;
+  font-size: 18px !important;
+}
+
+.dropdown-menu {
+  background: black;
+}
+
+.dropdown-item {
+  color: white;
+}
+
+.dropdown-item:hover {
+  background: #ffc107;
+  color: black;
+}
+
+/* CART */
+.cart-icon {
+  position: relative;
+  color: white;
+  font-size: 22px;
+}
+
+#cart-count {
+  position: absolute;
+  top: -8px;
+  right: -10px;
+  background: red;
+  font-size: 11px;
+  padding: 2px 6px;
+  border-radius: 50%;
+}
+
+/* OFFCANVAS HALF WIDTH */
+.offcanvas-start {
+  width: 70% !important;
+  background: black;
+  color: white;
+}
+#mobileMenu{
+    background-color:black ;
+}
+#mobileMenu h5{
+    color: white;
+}
+#mobileMenu button{
+    color: white;
+    background-color: white;
+}
+
+/*  
 #navbar1{
     position: sticky;
     top: 0;
@@ -17,7 +92,7 @@
     padding: .5rem 5rem;
     box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.413);
     background: black;
-    /* let flex handle alignment instead of text-align */
+    
 }
 @media screen and (min-width: 375px) {
     #navbar1 {
@@ -75,7 +150,7 @@
     font-weight: 500;
 }
 .dropdown-menu{
-    /* rely on Bootstrap for show/hide behavior */
+    
     background-color: black;
 }
 .carticon{
@@ -94,21 +169,19 @@
 
 
 .brandname{
-    font-family: 'Asimovian', sans-serif;
+    font-family: 'Asimovian', sans-serif !important;
     font-size: 30px;
     font-weight: 700;
-    color: white;
+    color: white !important;
 }
 .brandname2{
     font-family: 'Asimovian', sans-serif;
     font-size: 30px;
     font-weight: 700;
-    color: yellow;
+    color: #ffc107;
     margin-right: 20px;
 }
-/* Remove duplicate brandname adjustments; base rules already defined above */
 
-/*cart count */
 
 .cart-icon{
     position: relative;
@@ -123,4 +196,4 @@
     border-radius: 50%;
     padding: 2px 6px;
     font-size: 12px;
-}
+}  */

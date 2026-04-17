@@ -1,5 +1,10 @@
-.footer img{
-    height: 600px;
-    width: 100%;
-    justify-content: center;
+
+ .footer-link {
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.footer-link:hover {
+  color: black;
+  padding-left: 5px;
 }

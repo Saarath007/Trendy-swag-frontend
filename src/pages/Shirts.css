@@ -8,22 +8,6 @@
     padding-left: 10px;
     
 }
-@media screen and (max-width: 768px){
-.headline h1{
-    /* margin: 30PX 50PX; */
-    letter-spacing: 2px;
-    font-size: 20px;
-   
-    opacity: 0.8;
-    padding-top: 30px;
-    padding-left: 10px;
-    text-align: center;
-   
-
-    
-}
-
-}
 #products{
     background-color:#fdf8e1 !important;
     margin-top: 0px;
@@ -33,14 +17,6 @@
     height: 280px;
 }
 
-@media screen and (max-width: 768px) {
-    #products img{
-    width: 200px;
-    height: 150px;
-    padding-top:15px ;
-    margin-top: 10px;
-}
-}
 #products h4{
     font-size: 30px;
     font-weight: 700;
@@ -49,18 +25,6 @@
     text-shadow: 0px 0px 0px rgb(249, 248, 164);
     text-align: center;
     color: black;
-}
-@media screen and (max-width: 768px){
- #products h4{
-    font-size: 25px;
-    font-weight: 700;
-    letter-spacing: 2px;
-    /* font-family:'Asimovian',sans-serif; */
-    text-shadow: 0px 0px 0px rgb(249, 248, 164);
-    text-align: center;
-    color: black;
-}
-
 }
 .card{
     width: 250px;
@@ -76,23 +40,6 @@
     margin: 20px 80px ;
     transition: all .2s ease !important ; 
     
-}
-@media screen and (max-width: 768px){
-    .card{
-    width: 200px;
-    height: 300px;
-    background: #fffae5 !important;
-    border: none !important;
-    box-shadow: 15px 20px 20px rgba(0,0,0,.4),
-                inset 2px 2px 10px white;
-                border-radius:20px !important;   
-    overflow: hidden;
-    justify-content: center; 
-    align-items: center; 
-    margin: 20px 15px ;
-    transition: all .2s ease !important ; 
-    
-}
 }
 
 .card:hover{
@@ -112,6 +59,219 @@
 #products p{
     color: black;
 }
+
+/* @media screen and (max-width: 768px){
+.headline h1{
+   
+    letter-spacing: 2px;
+    font-size: 20px;
+   
+    opacity: 0.8;
+    padding-top: 30px;
+    padding-left: 10px;
+    text-align: center;
+   
+
+    
+}
+
+} */
+
+
+@media screen and (min-width:375px){
+
+    .card{
+         width: 150px;
+         height: 255px;
+         margin: 10px 10px ;
+       }
+      #products img{
+        width: 150px;
+        height: 130px;
+        padding-top:10px ;
+        margin-top: 17px;
+       }
+     .card h5{
+       font-size: 12px;
+       margin-top: 0px;
+     }
+     .card p {
+      font-size: 12px;
+      margin-bottom: 5px;
+      }
+    .card button{
+    font-size: 10px;
+    margin-bottom: 2px;
+    }
+    #products h1{
+        font-size: 15px;
+    }
+    #products h4{
+        font-size: 15px;
+    }
+}
+@media screen and (min-width:425px){
+
+    .card{
+         width: 155px;
+         height: 255px;
+         margin: 10px 15px ;
+       }
+      #products img{
+        width: 152px;
+        height: 132px;
+        padding-top:10px ;
+        margin-top: 17px;
+       }
+     .card h5{
+       font-size: 13px;
+       margin-top: 0px;
+     }
+     .card p {
+      font-size: 13px;
+      margin-bottom: 5px;
+      }
+    .card button{
+    font-size: 10px;
+    margin-bottom: 2px;
+    }
+    #products h1{
+        font-size: 15px;
+    }
+    #products h4{
+        font-size: 15px;
+    }
+}
+@media screen and (min-width:768px){
+
+    .card{
+         width: 200px;
+         height: 280px;
+         margin: 15px 15px ;
+       }
+      #products img{
+        width: 200px;
+        height: 140px;
+        padding-top:10px ;
+        margin-top: 17px;
+       }
+     .card h5{
+       font-size: 16px;
+       margin-top: 0px;
+     }
+     .card p {
+      font-size: 17px;
+      margin-bottom: 5px;
+      }
+    .card button{
+    font-size: 14px;
+    
+    }
+    #products h1{
+        font-size: 25px;
+    }
+    #products h4{
+        font-size: 20px;
+    }
+}
+@media screen and (min-width:1024px){
+
+    .card{
+       width: 215px;
+       height: 350px;
+         margin: 20px 15px ;
+       }
+      #products img{
+        width: 240px;
+        height: 160px;
+        padding-top:0px ;
+        margin-top: 10px;
+       }
+     .card h5{
+       font-size: 19px;
+       margin-top: 0px;
+     }
+     .card p {
+      font-size: 19px;
+      margin-bottom: 5px;
+      }
+    .card button{
+    font-size: 19px;
+    
+    }
+    #products h1{
+        font-size: 30px;
+    }
+    #products h4{
+        font-size: 30px;
+    }
+}
+@media screen and (min-width:1440px){
+
+    .card{
+        width: 250px;
+        height: 455px;
+         margin: 20px 30px ;
+       }
+      #products img{
+        width: 250px;
+        height: 280px;
+        padding-top:10px ;
+        margin-top: 17px;
+       }
+     .card h5{
+       font-size: 20px;
+       margin-top: 0px;
+     }
+     .card p {
+      font-size: 20px;
+      margin-bottom: 14px;
+      }
+    .card button{
+    font-size: 14px;
+    
+    }
+    #products h1{
+        font-size: 40px;
+        
+    }
+    #products h4{
+        font-size: 30px;
+    }
+}
+/* 
+@media screen and (max-width: 768px){
+ #products h4{
+    font-size: 25px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    
+    text-shadow: 0px 0px 0px rgb(249, 248, 164);
+    text-align: center;
+    color: black;
+}
+
+}
+
+@media screen and (max-width: 768px){
+    .card{
+    width: 200px;
+    height: 300px;
+    background: #fffae5 !important;
+    border: none !important;
+    box-shadow: 15px 20px 20px rgba(0,0,0,.4),
+                inset 2px 2px 10px white;
+                border-radius:20px !important;   
+    overflow: hidden;
+    justify-content: center; 
+    align-items: center; 
+    margin: 20px 5px ;
+    transition: all .2s ease !important ; 
+    
+}
+}
+
+
 @media screen and (max-width: 768px){
     #products h5{
            font-size: 15px;
@@ -126,4 +286,4 @@
         padding-top: 0px;
         
     }
-}
+} */

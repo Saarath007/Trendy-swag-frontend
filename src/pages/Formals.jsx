@@ -30,13 +30,13 @@ const Formals = () => {
 				                    	<div className="card">
 						                    <img src={formals.img} className="card-img-top"/>
 				                    		 <div className="card-body text-center mb-3">
-				             		        	<h5 className="card-title">{formals.FPname}</h5>
+				             		        	<h5 className="card-title">{formals.fpname}</h5>
 					                     		<h5>Rs:{formals.price}</h5>
-						                      <p className="text-decoration-line-through">Rs:{formals.oldPrice}</p>
+						                      <p className="text-decoration-line-through">Rs:{formals.oldprice}</p>
 						                        {
-                                    cartProducts.find(Formals=> Formals.id === formals.id)?(
-                                    <button className ='cardbtn btn-warning' onClick={()=> {deleteCart(formals)}}>remove</button>):(
-                                      <button className = 'cardbtn btn-warning' onClick={()=>{addCart(formals)}}>Add To Cart</button>
+                                    cartsProducts.find(Formals=> Formals.id === formals.id)?(
+                                    <button className ='cardbtn btn btn-warning' onClick={()=> {deleteCart(formals)}}>remove</button>):(
+                                      <button className = 'cardbtn btn btn-warning' onClick={()=>{addCart(formals)}}>Add To Cart</button>
                                     )
 
                                   }

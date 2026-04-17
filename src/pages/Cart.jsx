@@ -37,19 +37,19 @@ const Cart = () => {
 				                    	<div className="card-cart">
 						                    <img src={item.img} className="card-img-top"/>
 				                    		 <div className="card-body text-center mb-3">
-				             		        	<h5 className="card-title">{item.Sname}</h5>
-				             		        	<h5 className="card-title">{item.TSname}</h5>
-				             		        	<h5 className="card-title">{item.Jname}</h5>
-				             		        	<h5 className="card-title">{item.FPname}</h5>
-					                     		<h5>Rs:{item.Price}</h5>
-						                      <p className="text-decoration-line-through">Rs:{item.oldPrice}</p>
+				             		        	<h5 className="card-title">{item.sname}</h5>
+				             		        	<h5 className="card-title">{item.tsname}</h5>
+				             		        	<h5 className="card-title">{item.jname}</h5>
+				             		        	<h5 className="card-title">{item.fpname}</h5>
+					                     		<h5>Rs:{item.price}</h5>
+						                      <p className="text-decoration-line-through">Rs:{item.oldprice}</p>
 					                      	</div>
-                                             <button onClick={()=>{decrementCart(item.id, item.quantity)}}>-</button>
+                                             <button className='btn btn-outline-secondary ms-5 me-2' onClick={()=>{decrementCart(item.id, item.quantity)}}>-</button>
                                                 {item.quantity}
-                                                <button onClick={()=>{incrementCart(item.id, item.quantity)}}>+</button>
+                                                <button className='btn btn-outline-secondary  m-2' onClick={()=>{incrementCart(item.id, item.quantity)}}>+</button>
 					                      </div>
                                          <div className="details2">
-                                            <button className='btn btn-danger' onClick={() =>{deleteCart(item)}}>Delete</button>
+                                            <button className='btn btn-danger ms-5' onClick={() =>{deleteCart(item)}}>Delete</button>
                                         </div>
 			                      </div>
                               

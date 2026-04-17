@@ -11,19 +11,19 @@ const CartSlice= createSlice({
     reducers:{
         addToCart:(state,action)=>{
             const newItem=action.payload
-            const existingItem=state.cartItems.find(Items=>Items._id ===newItem._id)
+            const existingItem=state.cartItems.find(Items=>Items.id ===newItem.id)
             if(existingItem){
                 existingItem.quantity += newItem.quantity
             }else
             {
                 state.cartItems.push({
                     _id:newItem._id,
-                    Sname:newItem.Sname,
-                    FPnmae:newItem.FPname,
-                    Jname:newItem.Jname,
-                    TSname:newItem.TSname,
-                    Price:newItem.Price,
-                    oldPrice:newItem.oldPrice,
+                    sname:newItem.sname,
+                    fpname:newItem.fpname,
+                    jname:newItem.jname,
+                    tsname:newItem.tsname,
+                    price:newItem.price,
+                    oldprice:newItem.oldprice,
                     img:newItem.img,
                     quantity:newItem.quantity
 
@@ -35,13 +35,13 @@ const CartSlice= createSlice({
 
         
         deleteFromCart:(state,action)=>{
-            state.cartItems=state.cartItems.filter(Items=>Items._id !== action.payload._id);
+            state.cartItems=state.cartItems.filter(Items=>Items.id !== action.payload.id);
             localStorage.setItem("cartItems",JSON.stringify(state.cartItems));
         },
 
         updateQuantity:(state,action)=>{
             const{id,quantity}=action.payload;
-            const itemToUpdate=state.cartItems.find(Item=>Item._id===id);
+            const itemToUpdate=state.cartItems.find(Item=>Item.id===id);
             if(itemToUpdate)
             {
                 itemToUpdate.quantity=quantity;

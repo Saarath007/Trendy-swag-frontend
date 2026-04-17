@@ -15,6 +15,8 @@ import Upload from './admin/Upload'
 import Update from './admin/Update'
 import Edit from './admin/Edit'
 import Login from './components/Login'
+import Contact from './pages/Contact'
+import Header from './components/Header'
 
 
 
@@ -29,6 +31,7 @@ function App() {
     
    <BrowserRouter>
    <Navbar/>
+   <Header/>
    <Routes>
       <Route path = "/" element={<Home/>}/>
       <Route path = "/about" element={<About/>}/>
@@ -36,6 +39,7 @@ function App() {
       <Route path = "/tshirts" element={<Tshirt/>}/>
       <Route path = "/jeans" element={<Jeans/>}/>
       <Route path = "/formals" element={<Formals/>}/>
+      <Route path='/contact' element={<Contact/>}/>
       <Route path = "/cart" element ={<Cart/>}/>
       <Route path='/upload' element = {<Upload/>}/>
       <Route path='/update' element = {<Update/>}/>
@@ -43,6 +47,7 @@ function App() {
    </Routes>
    <Footer/>
    </BrowserRouter>
+    
 
 
 

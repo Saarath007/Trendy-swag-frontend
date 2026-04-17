@@ -12,58 +12,58 @@ import imgh08 from '../images/imgh08.png';
 const Tshirtsdetail = [
     {
        id:1,
-       TSname: 'black&white graphic',
-       Price:599.00,
-       oldPrice: 799.00,
+       tsname: 'black&white graphic',
+       price:599.00,
+       oldprice: 799.00,
        img: imgh01
     },
     {
        id:2,
-       TSname: 'Beige with black printed',
-       Price:599.00,
-       oldPrice: 799.00,
+       tsname: 'Beige with black printed',
+       price:599.00,
+       oldprice: 799.00,
        img:imgh02  
     },
     {
        id:3,
-       TSname: 'Black&purple sleeve printed',
-       Price:599.00,
-       oldPrice: 799.00,
+       tsname: 'Black&purple sleeve printed',
+       price:599.00,
+       oldprice: 799.00,
        img:imgh03   
     },
     {
        id:4,
-       TSname: 'Black with graphic printed',
-       Price:599.00,
-       oldPrice: 799.00,
+       tsname: 'Black with graphic printed',
+       price:599.00,
+       oldprice: 799.00,
        img:imgh04   
     },
     {
        id:5,
-       TSname: 'Beige with blue printed',
-       Price:599.00,
-       oldPrice: 799.00,
+       tsname: 'Beige with blue printed',
+       price:599.00,
+       oldprice: 799.00,
        img:imgh05   
     },
     {
        id:6,
-       TSname: 'Black with japanese printed',
-       Price:599.00,
-       oldPrice: 799.00,
+       tsname: 'Black with japanese printed',
+       price:599.00,
+       oldprice: 799.00,
        img:imgh06   
     },
     {
        id:7,
-       TSname: 'Black&orange Flame designs',
-       Price:599.00,
-       oldPrice: 799.00,
+       tsname: 'Black&orange Flame designs',
+       price:599.00,
+       oldprice: 799.00,
        img:imgh07   
     },
     {
        id:8,
-       TSname: 'Black&White tribal',
-       Price:599.00,
-       oldPrice: 799.00,
+       tsname: 'Black&White tribal',
+       price:599.00,
+       oldprice: 799.00,
        img:imgh08   
     },
 

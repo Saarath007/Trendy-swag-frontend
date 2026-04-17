@@ -1,12 +1,13 @@
 
 import React from 'react'
 import './Home.css'
-import CAs from '../assets/CAs.png';
-import CAt from '../assets/CAt.png';
-import CAj from '../assets/CAj.png';
-import CAfp from '../assets/CAf.png';
+import CAs01 from '../assets/CAs01.png'
+import CAt02 from '../assets/CAt02.png'
+import CAj03 from '../assets/CAj03.png'
+import CAfp04 from '../assets/CAfp04.png'
 import dare from '../assets/dare01.png';
-
+import Carousel from './Carousel';
+import { IoBagHandle } from "react-icons/io5";
 
 const Home = () => {
   return (
@@ -18,36 +19,36 @@ const Home = () => {
 
         </div>  
             <div className='catbag'>
-              <h1><strong>Categories To Bag</strong></h1>
+              <h1><strong>Categories To Bag <IoBagHandle /></strong></h1>
             </div>
 <div class="container-fluid">
     <div class="row bagbox g-4 row-cols-lg-4 row-cols-2">
             <div class="col">
                 <a href="./Shirts.html">
-                    <img src={CAs} alt="Category 1" class="img-fluid"/>
+                    <img src={CAs01} alt="Category 1" class="img-fluid"/>
                 </a>
             </div>
             <div class="col">
                 <a href="./T-shirts.html">
-                    <img src={CAt} alt="Category 2" class="img-fluid"/>
+                    <img src={CAt02} alt="Category 2" class="img-fluid"/>
                 </a>
     
             </div>
             <div class="col">
                 <a href="./Pants.html">
-                    <img src={CAj} alt="Category 3" class="img-fluid"/>
+                    <img src={CAj03} alt="Category 3" class="img-fluid"/>
                 </a>
     
             </div>
             <div class="col">
                 <a href="./Formal.html">
-                    <img src={CAfp} alt="Category 3" class="img-fluid"/>
+                    <img src={CAfp04} alt="Category 3" class="img-fluid"/>
                 </a>
             </div>
         </div>
     
   </div>
-
+<Carousel/>
 
 
 

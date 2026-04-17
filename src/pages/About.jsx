@@ -1,9 +1,12 @@
 import React from 'react'
 import './About.css'
+import Carousel from './Carousel'
+import Header from '../components/Header'
 
 const About = () => {
   return (
     <div>
+	
          <div id='about'>
           <div class="container-fluid">
 		       	<div class="row">
@@ -18,13 +21,14 @@ const About = () => {
 						pieces that celebrate every occasion.
 					</p>
 				</div>
-
-
 			</div>
 		</div>
 
          </div>
+		 
 
+
+	
 
     </div>
   )

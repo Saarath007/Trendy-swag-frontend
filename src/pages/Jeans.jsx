@@ -31,13 +31,13 @@ const Jeans = () => {
 				                    	<div className="card">
 						                    <img src={jeans.img} className="card-img-top"/>
 				                    		 <div className="card-body text-center mb-3">
-				             		        	<h5 className="card-title">{jeans.Jname}</h5>
+				             		        	<h5 className="card-title">{jeans.jname}</h5>
 					                     		<h5>Rs:{jeans.price}</h5>
-						                      <p className="text-decoration-line-through">Rs:{jeans.oldPrice}</p>
+						                      <p className="text-decoration-line-through">Rs:{jeans.oldprice}</p>
 						                      {
-                                    cartProducts.find(Jeans=> Jeans.id === jeans.id)?(
-                                    <button className ='cardbtn btn-warning' onClick={()=> {deleteCart(jeans)}}>remove</button>):(
-                                      <button className = 'cardbtn btn-warning' onClick={()=>{addCart(jeans)}}>Add To Cart</button>
+                                    cartsProducts.find(Jeans=> Jeans.id === jeans.id)?(
+                                    <button className ='cardbtn btn btn-warning' onClick={()=> {deleteCart(jeans)}}>remove</button>):(
+                                      <button className = 'cardbtn btn btn-warning' onClick={()=>{addCart(jeans)}}>Add To Cart</button>
                                     )
 
                                   }
