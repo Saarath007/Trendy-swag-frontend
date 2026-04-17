@@ -185,7 +185,8 @@ const Navbar = () => {
               <button className="btn btn-warning">Search</button>
             </form>
 
-            <button className="btn btn-warning me-3">Sign In</button>
+            <button className="btn btn-warning me-3" data-bs-toggle="modal"
+              data-bs-target="#exampleModal">Sign In</button>
 
             <Link to="/cart" className="cart-icon">
               <FiShoppingCart />
