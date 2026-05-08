@@ -8,6 +8,7 @@ import CAfp04 from '../assets/CAfp04.png'
 import dare from '../assets/dare01.png';
 import Carousel from './Carousel';
 import { IoBagHandle } from "react-icons/io5";
+import { Link } from 'react-router-dom'
 
 const Home = () => {
   return (
@@ -24,26 +25,26 @@ const Home = () => {
 <div class="container-fluid">
     <div class="row bagbox g-4 row-cols-lg-4 row-cols-2">
             <div class="col">
-                <a href="./Shirts.html">
+                <Link to = "/shirts">
                     <img src={CAs01} alt="Category 1" class="img-fluid"/>
-                </a>
+                </Link>
             </div>
             <div class="col">
-                <a href="./T-shirts.html">
+                <Link to = "/tshirts">
                     <img src={CAt02} alt="Category 2" class="img-fluid"/>
-                </a>
+                </Link>
     
             </div>
             <div class="col">
-                <a href="./Pants.html">
+                <Link to = "/jeans">
                     <img src={CAj03} alt="Category 3" class="img-fluid"/>
-                </a>
+                </Link>
     
             </div>
             <div class="col">
-                <a href="./Formal.html">
+                <Link to = "/formals">
                     <img src={CAfp04} alt="Category 3" class="img-fluid"/>
-                </a>
+                </Link>
             </div>
         </div>
     

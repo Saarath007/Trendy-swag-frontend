@@ -59,7 +59,7 @@
   position: absolute;
   top: -8px;
   right: -10px;
-  background: red;
+  background: red;  
   font-size: 11px;
   padding: 2px 6px;
   border-radius: 50%;
@@ -79,5 +79,24 @@
 }
 #mobileMenu button{
     color: white;
-    background-color: white;
+    background-color: #ffc107;
+}
+/*  */
+.cart-icon {
+  font-size: 24px;
+  color: black;
+}
+
+.offcanvas .nav-link {
+  font-size: 18px;
+  padding: 10px 0;
+}
+
+.offcanvas .dropdown-menu {
+  border: none;
+  padding-left: 15px;
+}
+
+.offcanvas .btn {
+  border-radius: 8px;
 }

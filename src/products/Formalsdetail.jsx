@@ -38,7 +38,40 @@ const Formalsdetail = [
                   oldprice:1199.00,
                   img: imgfp04
           
+              },
+              {
+                  id: 5,
+                  fpname:'Blue Formals pant',
+                  price:899.00,
+                  oldprice:1199.00,
+                  img: imgfp01
+          
+              },
+              {
+                  id: 6,
+                  fpname:'beige Formal pant',
+                  price:899.00,
+                  oldprice:1199.00,
+                  img: imgfp02
+          
+              },
+              {
+                  id: 7,
+                  fpname:'Brown Formal Pant',
+                  price:899.00,
+                  oldprice:1199.00,
+                  img: imgfp03
+          
+              },
+              {
+                  id: 8,
+                  fpname:'Black Formal Pant',
+                  price:899.00,
+                  oldprice:1199.00,
+                  img: imgfp04
+          
               }
+      
             
     
 ]

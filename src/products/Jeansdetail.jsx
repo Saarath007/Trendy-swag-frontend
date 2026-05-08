@@ -36,7 +36,39 @@ const Jeansdetail = [
         oldprice:1199.00,
         img: imgj04
 
-    }
+    },
+    {
+        id: 5,
+        jname:'Rust&cream printed',
+        price:899.00,
+        oldprice:1199.00,
+        img: imgj01
+
+    },
+    {
+        id: 6,
+        jname:'Rust&cream printed',
+        price:899.00,
+        oldprice:1199.00,
+        img: imgj02
+
+    },
+    {
+        id: 7,
+        jname:'Rust&cream printed',
+        price:899.00,
+        oldprice:1199.00,
+        img: imgj03
+
+    },
+    {
+        id: 8,
+        jname:'Rust&cream printed',
+        price:899.00,
+        oldprice:1199.00,
+        img: imgj04
+
+    },
 ]
 
 

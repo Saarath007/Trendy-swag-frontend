@@ -144,6 +144,44 @@ const Navbar = () => {
             </li>
 
           </ul>
+              {/* <button
+      className="btn-close"
+      data-bs-dismiss="offcanvas"
+    ></button> */}
+  </div>
+
+  <div className="offcanvas-body d-flex flex-column">
+
+    {/* SEARCH */}
+    <form className="d-flex mb-3">
+      <input
+        type="text"
+        className="form-control me-2"
+        placeholder="Search..."
+      />
+
+      <button className="btn btn-warning text-dark" type="submit">
+        Search
+      </button>
+    </form>
+
+    {/* SIGN IN BUTTON */}
+    <button
+      className="btn btn-warning w-100 mb-3 text-dark"
+      data-bs-toggle="modal"
+      data-bs-target="#exampleModal"
+    >
+      Sign In
+    </button>
+
+    {/* CART */}
+    <Link
+      to="/cart"
+      className="btn btn-warning mb-4 d-flex align-items-center justify-content-center"
+    >
+      <FiShoppingCart className="me-2 text-dark"/>
+      Cart
+    </Link>
         </div>
       </div>
 
