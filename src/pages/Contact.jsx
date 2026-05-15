@@ -36,7 +36,7 @@ const Contact = () => {
 
         {/* Title */}
         <div className="text-center mb-4">
-          <h2 className="fw-bold text-warning">Contact Trendis Swag</h2>
+          <h2 className="fw-bold text-warning">Contact Trendy Swag</h2>
           <p className="text-light">We’d love to hear from you!</p>
         </div>
 
@@ -119,7 +119,7 @@ const Contact = () => {
               </h5>
 
               <p className="text-light">
-                📍 Location: Tamil Nadu, India
+                📍 Location: Coimbatore, Tamil Nadu, India
               </p>
 
               <p className="text-light">
@@ -127,13 +127,13 @@ const Contact = () => {
               </p>
 
               <p className="text-light">
-                📧 Email: support@trendisswag.com
+                📧 Email: support@trendyswag.com
               </p>
 
               <hr className="border-secondary" />
 
               <p className="text-light small">
-                Trendis Swag – Your style, your swag 😎
+                Trendy Swag – Your style, your swag 😎
               </p>
 
             </div>
